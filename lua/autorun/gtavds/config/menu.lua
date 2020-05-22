@@ -43,6 +43,12 @@ if CLIENT then
   		}
   	);
 
+    panel:AddControl( "CheckBox", {
+  		Label = "Greyscaling enabled",
+  		Command = "cl_gtavds_greyscale",
+  		}
+  	);
+
     panel:AddControl( "Label",  { Text = ""});
     panel:AddControl( "Label",  { Text = "Singleplayer settings"});
 

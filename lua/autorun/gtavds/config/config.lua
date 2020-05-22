@@ -31,6 +31,7 @@ if CLIENT then
   local NG, NG_DEFAULT = "cl_gtavds_ng", 0;
   local SOUND, SOUND_DEFAULT = "cl_gtavds_sound", 1;
   local SLOWMO, SLOWMO_DEFAULT = "sv_gtavds_slowmo", 1;
+  local GREYSCALE, GREYSCALE_DEFAULT = "cl_gtavds_greyscale", 1;
 
   -- ConVars
   local enabled = CreateClientConVar(ENABLED, ENABLED_DEFAULT, true, true);
@@ -39,6 +40,7 @@ if CLIENT then
   local custom = CreateClientConVar(CUSTOM, CUSTOM_DEFAULT, true);
   local sound = CreateClientConVar(SOUND, SOUND_DEFAULT, true);
   local nextGen = CreateClientConVar(NG, NG_DEFAULT, true);
+  local grey = CreateClientConVar(GREYSCALE, GREYSCALE_DEFAULT, true);
 
   --[[
     Is the addon enabled?
@@ -89,6 +91,14 @@ if CLIENT then
   end
 
   --[[
+    Is greyscale enabled?
+    @return {boolean} is greyscale enabled
+  ]]
+  function GTAVDS:IsGreyScaleEnabled()
+    return grey:GetInt() >= 1;
+  end
+
+  --[[
     Resets the settings
   ]]
   concommand.Add("cl_gtavds_reset", function(ply, com, args)
@@ -99,6 +109,7 @@ if CLIENT then
     RunConsoleCommand(SOUND, SOUND_DEFAULT);
     RunConsoleCommand(NG, NG_DEFAULT);
     RunConsoleCommand(SLOWMO, SLOWMO_DEFAULT);
+    RunConsoleCommand(GREYSCALE, GREYSCALE_DEFAULT);
   end);
 
 end

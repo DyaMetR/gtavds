@@ -197,16 +197,22 @@
       [ "$pp_colour_addr" ] = overlay.r * COLOUR * colour,
       [ "$pp_colour_addg" ] = overlay.g * COLOUR * colour,
       [ "$pp_colour_addb" ] = overlay.b * COLOUR * colour,
-      [ "$pp_colour_brightness" ] = -darkness * maxDarkness,
-      [ "$pp_colour_contrast" ] = 1 + (darkness * maxContrast),
-      [ "$pp_colour_colour" ] = 1 - greyscale,
       [ "$pp_colour_mulr" ] = 0,
       [ "$pp_colour_mulg" ] = 0,
       [ "$pp_colour_mulb" ] = 0
     };
+
+    if GTAVDS:IsGreyScaleEnabled() then
+      tab[ "$pp_colour_colour" ] = 1 - greyscale;
+      tab[ "$pp_colour_brightness" ] = -darkness * maxDarkness;
+      tab[ "$pp_colour_contrast" ] = 1 + (darkness * maxContrast);
+    end
+
     DrawColorModify( tab );
 
     -- Bloom
-    DrawBloom( 0.42, 2.64, 4, 4, 0, 2, 1 * bloom, 1 * bloom, 1 * bloom );
+    if GTAVDS:IsGreyScaleEnabled() or not GTAVDS:HasAnimationEnded() then
+      DrawBloom( 0.42, 2.64, 4, 4, 0, 2, 1 * bloom, 1 * bloom, 1 * bloom );
+    end
   end
 end
