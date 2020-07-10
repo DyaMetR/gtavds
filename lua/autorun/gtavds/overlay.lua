@@ -206,6 +206,10 @@
       tab[ "$pp_colour_colour" ] = 1 - greyscale;
       tab[ "$pp_colour_brightness" ] = -darkness * maxDarkness;
       tab[ "$pp_colour_contrast" ] = 1 + (darkness * maxContrast);
+    else
+      tab[ "$pp_colour_colour" ] = 1;
+      tab[ "$pp_colour_brightness" ] = 0;
+      tab[ "$pp_colour_contrast" ] = 1;
     end
 
     DrawColorModify( tab );
