@@ -73,13 +73,28 @@ if CLIENT then
   	);
 
     -- Version number and signature
-    panel:AddControl( "Label",  { Text = ""});
-    panel:AddControl( "Label",  { Text = "Made by DyaMetR"});
-    panel:AddControl( "Label",  { Text = "Sounds and concept by Rockstar"});
-    panel:AddControl( "Label",  { Text = "Vignette texture base by Rush_Freak"});
-    panel:AddControl( "Label",  { Text = "Legacy sound originally ripped by EasterGlitch"});
-    panel:AddControl( "Label",  { Text = "Portuguese translation by Vihiper"});
-    panel:AddControl( "Label",  { Text = "Version " .. GTAVDS.Version});
+    panel:Help('\nCredits\n');
+
+    panel:Help('Made by');
+    panel:ControlHelp('DyaMetR');
+
+    panel:Help('Sounds and concept');
+    panel:ControlHelp('Rockstar Games');
+
+    panel:Help('Vignette texture');
+    panel:ControlHelp('Rush_Freak');
+
+    panel:Help('Legacy sound original rip');
+    panel:ControlHelp('EasterGlitch');
+
+    panel:Help('Portuguese translation');
+    panel:ControlHelp('Vihiper');
+
+    panel:Help('French translation');
+    panel:ControlHelp('ninjaflipxxu');
+
+    panel:Help('\nVersion');
+    panel:ControlHelp(GTAVDS.Version);
   end
 
   --[[
