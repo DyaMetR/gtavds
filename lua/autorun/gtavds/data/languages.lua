@@ -64,19 +64,19 @@ if CLIENT then
 
   -- French
   GTAVDS:AddLanguage("fr", "Français", {
-    ["wasted.default"] = "vous êtes mort",
-    ["death.weapon.generic"] = "vous a tuer.",
-    ["death.weapon.pistol"] = "vous a abattu.",
-    ["death.weapon.smg"] = "vous a criblé.",
-    ["death.weapon.rifle"] = "vous a abattu.",
-    ["death.weapon.shotgun"] = "vous a rempli de chevrotine.",
-    ["death.weapon.explosion"] = "vous a explosé.",
-    ["death.weapon.bolt"] = "vous a déchiré.",
+    ["wasted.default"] = "Vous êtes mort",
+    ["death.weapon.generic"] = "Vous a tuer.",
+    ["death.weapon.pistol"] = "Vous a tué un pistolet.",
+    ["death.weapon.smg"] = "Vous a tué avec un pistolet mitralleur.",
+    ["death.weapon.rifle"] = "Vous a tué avec un fusil d'assaut.",
+    ["death.weapon.shotgun"] = "Vous a tué avec un fusil à pompe.",
+    ["death.weapon.explosion"] = "Vous a explosé avec un lance-roquette.",
+    ["death.weapon.bolt"] = "Vous a tué avec un(e) sniper.",
     ["death.suicide"] = "Vous vous êtes suicider.",
     ["death.generic"] = "Vous êtes mort.",
-    ["death.vehicle"] = "vous a aplati.",
+    ["death.vehicle"] = "Vous a écraser avec un vehicule.",
     ["death.explosion"] = "Vous vous êtes fais exploser.",
-    ["death.npc.one"] = "A",
+    ["death.npc.one"] = "Un(e)",
     ["death.npc.generic"] = "vous a tuer."
   });
 
