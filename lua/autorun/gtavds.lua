@@ -1,15 +1,15 @@
 --[[-------------------
   Grand Theft Auto V
     Death screen
-    Version 2.0.7
-     19/12/2021
+    Version 2.0.8
+     14/05/2022
 
 By DyaMetR
 ]]---------------------
 
 -- Framework table
 GTAVDS = {};
-GTAVDS.Version = "2.0.7";
+GTAVDS.Version = "2.0.8";
 
 --[[
   Correctly includes a file

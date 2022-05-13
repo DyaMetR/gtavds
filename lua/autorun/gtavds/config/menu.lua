@@ -91,7 +91,7 @@ if CLIENT then
     panel:ControlHelp('Vihiper');
 
     panel:Help('French translation');
-    panel:ControlHelp('TifykaSpaghetti');
+    panel:ControlHelp('tifykagames');
 
     panel:Help('\nVersion');
     panel:ControlHelp(GTAVDS.Version);

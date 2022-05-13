@@ -65,19 +65,19 @@ if CLIENT then
   -- French
   GTAVDS:AddLanguage("fr", "Français", {
     ["wasted.default"] = "Vous êtes mort",
-    ["death.weapon.generic"] = "Vous a tuer.",
-    ["death.weapon.pistol"] = "Vous a tué un pistolet.",
-    ["death.weapon.smg"] = "Vous a tué avec un pistolet mitralleur.",
-    ["death.weapon.rifle"] = "Vous a tué avec un fusil d'assaut.",
-    ["death.weapon.shotgun"] = "Vous a tué avec un fusil à pompe.",
-    ["death.weapon.explosion"] = "Vous a explosé avec un lance-roquette.",
-    ["death.weapon.bolt"] = "Vous a tué avec un(e) sniper.",
-    ["death.suicide"] = "Vous vous êtes suicider.",
-    ["death.generic"] = "Vous êtes mort.",
-    ["death.vehicle"] = "Vous a écraser avec un vehicule.",
-    ["death.explosion"] = "Vous vous êtes fais exploser.",
-    ["death.npc.one"] = "Un(e)",
-    ["death.npc.generic"] = "vous a tuer."
+    ["death.weapon.generic"] = "vous a tué.",
+		["death.weapon.pistol"] = "vous a tué un pistolet.",
+		["death.weapon.smg"] = "vous a tué avec un pistolet-mitralleur.",
+		["death.weapon.rifle"] = "vous a tué avec un fusil d'assaut.",
+		["death.weapon.shotgun"] = "Vous a tué avec un fusil à pompe.",
+		["death.weapon.explosion"] = "vous a explosé avec un explosif.",
+		["death.weapon.bolt"] = "vous a tué avec un(e) arme de précision.",
+		["death.suicide"] = "Vous vous êtes suicidé(e).",
+		["death.generic"] = "Vous êtes mort.",
+		["death.vehicle"] = "vous a écraser avec un vehicule.",
+		["death.explosion"] = "vous vous êtes fais exploser.",
+		["death.npc.one"] = "Un(e)",
+		["death.npc.generic"] = "vous a tuer."
   });
 
 end
